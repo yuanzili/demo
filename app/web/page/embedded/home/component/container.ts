@@ -1,7 +1,6 @@
 
 import { Vue, Component, Emit } from 'vue-property-decorator';
-import style from '@asset/css/embedded/list.scss';
-console.log('style',style);
+import '@asset/css/embedded/list.scss';
 import '@asset/fonts/iconfont.css';
 
 @Component

@@ -26,7 +26,7 @@ export default class EmbeddedService extends Service {
 
   public async getCourseList(condition: Condition) {
     const result = await this.context.curl(
-      'http://wap.beta.ablesky.com/course/list',
+      'http://wap.ablesky.com/course/list',
       {
         dataType: 'json',
         data: {
