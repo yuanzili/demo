@@ -1,0 +1,201 @@
+.recommend-box {
+    font-family: -apple-system, Helvetica, sans-serif;
+    background-size: 100%;
+    background-position-y: .75rem;
+    max-width: 50rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+.recommend-tab {
+    padding: 1.2rem 1rem 1.2rem 1rem;
+    position: fixed;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    background-color: white;
+    z-index: 100;
+
+    .nav-tab {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        display: inline-block;
+        text-decoration: none;
+        font-family: PingFang SC;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: rgba(140, 149, 159, 1);
+
+        &.add-tab {
+            margin-right: 2rem;
+        }
+
+        &.selected {
+            background: rgba(56, 122, 250, 0.1);
+            color: #387AFA;
+            border-radius: 2rem;
+        }
+
+        .add-font {
+            font-size: 1.8rem;
+        }
+    }
+
+    ;
+}
+
+
+
+
+.recommend-body {
+    padding-top: 6rem;
+
+    ul {
+        margin: 0 1rem 0 1rem;
+    }
+
+    li {
+        margin-bottom: 1rem;
+    }
+
+    .flex-box {
+        display: flex;
+        flex-direction: row;
+        height: 8rem;
+    }
+
+    .course-pic {
+        width: 40%;
+    }
+
+    .img-right {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 3%;
+
+        .jigou-font {
+            color: rgba(217, 217, 217, 1);
+            font-size: 1.8rem;
+            vertical-align: middle;
+            margin-left: -0.5rem;
+        }
+
+        .people-font {
+            color: rgba(217, 217, 217, 1);
+            font-size: 0.8rem;
+            vertical-align: middle;
+            margin-left: -0.2rem;
+        }
+
+        .organization {
+            vertical-align: middle;
+            display: inline-block;
+            width: 90%;
+            font-size: 1rem;
+            font-family: PingFang SC;
+            font-weight: 500;
+            color: rgba(127, 127, 127, 1);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .people-num {
+            position: absolute;
+            bottom: 0;
+            font-size: 1rem;
+            font-family: PingFang SC;
+            font-weight: 500;
+            color: rgba(153, 153, 153, 1);
+        }
+
+        .price {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-size: 1.3rem;
+            font-family: PingFang SC;
+            font-weight: bold;
+            color: rgba(250, 65, 24, 1);
+        }
+    }
+
+    .course-title {
+        height: 3.6rem;
+        margin-bottom: 0.3rem;
+        font-size: 1.3rem;
+        font-family: PingFang SC;
+        font-weight: 500;
+        color: rgba(25, 25, 25, 1);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+    }
+
+    .course-foot {
+        position: relative
+    }
+}
+
+
+
+
+
+
+
+
+/*-- 进度条 --*/
+.waterfllow-loading {
+    z-index: 2000;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    img {
+        &.loading-progress {
+            position: fixed;
+            /* 设置进度条水平居于窗口正中 */
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+
+            /* 不能设置margin-top:auto 和 margin-bottom: auto 否则IE下bottom就不顶用了 */
+            bottom: 30px;
+
+        }
+    }
+}
+
+
+
+.no-course {
+    width: 100%;
+    height: 30rem;
+
+    .default-body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            text-align: center;
+            font-size: 1.3rem;
+            font-family: PingFang SC;
+            font-weight: 500;
+            color: rgba(140, 149, 159, 1);
+        }
+
+        img {
+            width: 60%;
+            margin: 0 auto 4rem;
+        }
+    }
+}

@@ -1,0 +1,181 @@
+.recommend-box {
+    font-family: -apple-system,Helvetica,sans-serif;
+    background-size: 100%;
+    background-position-y: .75rem;
+    max-width: 50rem;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .recommend-tab {
+    padding: 1.2rem 1rem 1.2rem 1rem ;
+    position: fixed;
+    min-width:100%;
+    max-width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    background-color: white;
+    z-index: 100
+  }
+  
+  .recommend-tab .nav-tab {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    display: inline-block;
+    text-decoration: none;
+    font-family: PingFang SC;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgba(140, 149, 159, 1); 
+  }
+  
+  .recommend-tab .nav-tab.add-tab{
+    margin-right: 2rem;
+  }
+  
+  .recommend-tab .nav-tab.selected{
+    background: rgba(56,122,250,0.1);
+    color: #387AFA;
+    border-radius: 2rem;
+  }
+  .recommend-tab .nav-tab .add-font {
+      font-size: 1.8rem;
+  }
+
+  .recommend-body {
+    padding-top: 6rem;
+  }
+  
+  .recommend-body ul{
+      margin: 0 1rem 0 1rem;
+  }
+  
+  .recommend-body li{
+      margin-bottom: 1rem;
+  }
+  
+  .recommend-body .flex-box {
+    display: flex;
+    flex-direction:row;
+    height: 8rem;
+  }
+  
+  .recommend-body .course-pic {
+     width: 40%;
+  }
+  
+  .recommend-body .img-right{
+      width: 55%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 3%;
+  }
+  
+  .recommend-body .img-right .jigou-font {
+      color:rgba(217,217,217,1);
+      font-size: 1.8rem;
+      vertical-align: middle;
+      margin-left: -0.5rem;
+  }
+  
+  .recommend-body .img-right .people-font {
+      color:rgba(217,217,217,1);
+      font-size: 0.8rem;
+      vertical-align: middle;
+      margin-left: -0.2rem;
+  }
+  
+  .recommend-body .img-right .organization {
+      vertical-align: middle;
+      display: inline-block;
+      width: 90%;
+      font-size: 1rem;
+      font-family: PingFang SC;
+      font-weight: 500;
+      color: rgba(127,127,127,1);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  } 
+  
+  .recommend-body .course-title {
+      height: 3.6rem;
+      margin-bottom: 0.3rem;
+      font-size: 1.3rem;
+      font-family: PingFang SC;
+      font-weight: 500;
+      color: rgba(25,25,25,1);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+  }
+  .recommend-body .course-foot {
+      position:relative	
+  }
+  
+  .recommend-body .img-right .people-num {
+      position: absolute;
+      bottom: 0;
+      font-size: 1rem;
+      font-family: PingFang SC;
+      font-weight: 500;
+      color: rgba(153,153,153,1);
+  }
+  
+  .recommend-body .img-right .price {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      font-size: 1.3rem;
+      font-family: PingFang SC;
+      font-weight: bold;
+      color: rgba(250,65,24,1);
+  }
+  
+    /*-- 进度条 --*/
+          .waterfllow-loading {
+              z-index: 2000;
+              display: none;
+          }
+          .waterfllow-loading.active {
+              display: block;
+          }
+          .waterfllow-loading img.loading-progress {
+              position: fixed;
+              /* 设置进度条水平居于窗口正中 */
+              margin-left: auto;
+              margin-right: auto;
+              left:0;
+              right:0;
+   
+              /* 不能设置margin-top:auto 和 margin-bottom: auto 否则IE下bottom就不顶用了 */
+              bottom: 30px;
+  
+  }
+  
+  .no-course {
+      width: 100%;
+      height: 30rem;
+  }
+  
+  .no-course .default-body {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  
+  .no-course .default-body p {
+      text-align: center;
+      font-size: 1.3rem;
+      font-family: PingFang SC;
+      font-weight: 500;
+      color: rgba(140,149,159,1);
+  }
+  
+  .no-course .default-body  img {
+      width: 60%;
+      margin: 0 auto 4rem;
+  }

@@ -1,0 +1,24 @@
+{
+  "apps": [{
+    "name": "egg-vue-ts",
+    "description": "egg-vue-ts",
+    "script": "server.js",
+    "cwd": "/www/webdev/egg-vue-typescript-boilerplate-master",
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "combine_logs": true,
+    "instances": 1,
+    "exec_mode": "fork",
+    "error": "/www/webdev/logs/egg-vue-typescript-boilerplate-master/app.error",
+    "out_file": "/www/webdev/logs/egg-vue-typescript-boilerplate-master/app.out",
+    "env_test": {
+      "PORT": "7001",
+      "NODE_ENV": "test",
+      "LOGGER_DIR": "/www/webdev/logs/egg-vue-typescript-boilerplate-master"
+    },
+    "env": {
+      "PORT": "7001",
+      "NODE_ENV": "prod",
+      "LOGGER_DIR": "/www/webdev/logs/egg-vue-typescript-boilerplate-master"
+    }
+  }]
+}
